@@ -21,5 +21,11 @@ conda create --name newname --clone oldname|克隆oldname环境为newname环境
 conda remove --name oldname --all|彻底删除旧环境
 conda config --show channels|显示目前conda的数据源有哪些
 conda config --add channels xxx|添加地址为xxx的数据源
-conda config --set show_channels_urls yes|显示数据源
 conda config --remove channels xxx|删除地址为xxx的数据源
+conda config --remove-key channels|换回默认conda源
+```
+设置conda清华源
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
