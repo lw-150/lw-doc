@@ -107,4 +107,27 @@ http {
 * work_connections number
   * 每个woker的最大连接数
 ### HTTP模块配置
-*  
+```
+示例：
+http {
+  server {
+    listen          80;
+    server_name     www.domain1.com;
+    access_log      logs/domain1.access.log main;
+    location / {
+      index index.html;
+      root  /var/www/domain1.com/htdocs;
+    }
+  }
+  server {
+    listen          80;
+    server_name     www.domain2.com;
+    access_log      logs/domain2.access.log main;
+    location / {
+      index index.html;
+      root  /var/www/domain2.com/htdocs;
+    }
+  }
+}
+
+```

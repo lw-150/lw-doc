@@ -1,4 +1,5 @@
 # Nginx配置详细
+## 参见[Nginx中文官网](https://www.nginx.cn/doc/)
 ## Nginx配置文件结构
 ```
 ...              #全局块
